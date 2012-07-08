@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	
+	<TextView android:id="@+id/wifi" android:layout_height="wrap_content" android:text="TextView" android:layout_width="match_parent" android:layout_margin="5dip" android:layout_weight="1"></TextView>
+	<TextView android:id="@+id/running" android:layout_height="wrap_content" android:text="TextView" android:layout_width="match_parent" android:layout_margin="5dip" android:layout_weight="1"></TextView>
+	<TextView android:id="@+id/ssid" android:text="TextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dip" android:layout_weight="1"></TextView>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" 
+                  android:id="@+id/linearLayout1" android:orientation="horizontal">
+			<TextView android:text="Background check period (seconds)" android:id="@+id/periodLable" 
+			           android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dip"></TextView>
+			<EditText android:inputType="phone"
+			   android:layout_height="wrap_content" android:layout_width="match_parent" android:text="" android:id="@+id/scanPeriod" android:layout_margin="5dip"></EditText>
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" 
+                  android:id="@+id/linearLayout2" android:orientation="horizontal">
+	  <CheckBox android:text="Enable now" android:id="@+id/runNow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dip"></CheckBox>
+	  <CheckBox android:text="Enable on start" android:id="@+id/runOnStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dip"></CheckBox>	  	 
+	</LinearLayout>
+	<Button android:text="Refresh" android:id="@+id/refresh" 
+	 		android:layout_margin="5dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	</Button>
+</LinearLayout>
